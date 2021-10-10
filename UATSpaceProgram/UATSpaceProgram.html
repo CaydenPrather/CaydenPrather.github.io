@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Cayden Prather -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAT Space Program</title>
+    <script src="spaceProgramCode.js"></script>
+    <style>
+        /* creates background gradient */
+        body {background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(177,242,255,1) 2%, rgba(0,212,255,1) 73%)}
+        /* style for UAT logo image */
+        img {vertical-align: middle;border-radius:360px;}
+        /* creating a div for the header text */
+        div {vertical-align: middle; display:inline;font-weight:bold;font-size: x-large;}
+        /* style for the actual table */
+        table {width: 40%; margin-top: 15px; font-weight: bold;}
+        /* style for the buttons */
+        button {border-radius: 10px;}
+    </style>
+</head>
+<!-- body tag with basic style -->
+<body>
+    <!-- adding the image and setting alignment/border radius -->
+    <img src='UATspaceLogo.jpg'>
+    <!-- creating a div for the UAT Space Program Header -->
+    <div>
+    UAT Space Program
+    </div>
+    <!-- Creating the table for the data -->
+    <table border="3">
+        <tbody>
+            <!-- setting the table headers and assigning width to the columns -->
+        <tr>
+        <th width="40%">Data Type</th>
+        <th width="40%">Reading</th>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Time Elapsed: </td>
+        <td id="timeData"></td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Latitude:</td>
+        <td id="latData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Longitutde:</td>
+        <td id="longData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>GPS Altitutde:</td>
+        <td id="gpsData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>BMP Sensor Altitude:</td>
+        <td id="bmpAltData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>BMP Sensor Pressure:</td>
+        <td id="bmpPresData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>BMP Sensor Temperature:</td>
+        <td id="bmpTempData">&nbsp;</td>
+        </tr>
+         <!-- setting table data rows and assigning IDs to be used for data input -->
+         <tr>
+        <td>Digital Sensor Temperature:</td>
+        <td id="digTempData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>CSS Sensor Temperature:</td>
+        <td id="cssTempData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>CSS Sensor eCO2:</td>
+        <td id="csseC02Data">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>CSS Sensor TVOC:</td>
+        <td id="cssTVOCData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>UV:</td>
+        <td id="uvData">&nbsp;</td>
+        </tr>        
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Accel X:</td>
+        <td id="accXData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Accel Y:</td>
+        <td id="accYData">&nbsp;</td>
+        </tr>
+        <tr>
+        <td>Accel Z:</td>
+        <td id="accZData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Magnetic X:</td>
+        <td id="magXData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Magnetic Y:</td>
+        <td id="magYData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Magnetic Z:</td>
+        <td id="magZData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Gyro X:</td>
+        <td id="gyroXData">&nbsp;</td>
+        </tr>
+        <tr>
+        <td>Gyro Y:</td>
+        <td id="gyroYData">&nbsp;</td>
+        </tr>
+        <!-- setting table data rows and assigning IDs to be used for data input -->
+        <tr>
+        <td>Gyro Z:</td>
+        <td id="gyroZData">&nbsp;</td>
+        </tr>
+        </tbody>
+        </table>
+        <br>
+        <!-- creating the buttons for the functions -->
+        <button style="margin-right: 5px;" id="srtBTN" onclick="startCollection()">Start</button>
+        <button id="stpBTN" onclick="stopCollection()" disabled="">Stop</button>
+</body>
+</html>
